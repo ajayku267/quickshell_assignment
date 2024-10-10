@@ -1,0 +1,2 @@
+kanban_board
+quickshell assignmnet
