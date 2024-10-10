@@ -1,0 +1,57 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "zosmf": {
+            "type": "zosmf",
+            "properties": {
+                "port": 443
+            },
+            "secure": []
+        },
+        "tso": {
+            "type": "tso",
+            "properties": {
+                "account": "",
+                "codePage": "1047",
+                "logonProcedure": "IZUFPROC"
+            },
+            "secure": []
+        },
+        "ssh": {
+            "type": "ssh",
+            "properties": {
+                "port": 22
+            },
+            "secure": []
+        },
+        "zOpenDebug": {
+            "type": "zOpenDebug",
+            "properties": {
+                "dpsPort": 8143,
+                "dpsContextRoot": "api/v1",
+                "dpsSecured": true,
+                "uuid": "728f67e8-3dfa-4d6b-8a75-cf65a5f639b2"
+            },
+            "secure": []
+        },
+        "base": {
+            "type": "base",
+            "properties": {
+                "host": "",
+                "rejectUnauthorized": true
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        }
+    },
+    "defaults": {
+        "zosmf": "zosmf",
+        "tso": "tso",
+        "ssh": "ssh",
+        "zOpenDebug": "zOpenDebug",
+        "base": "base"
+    },
+    "autoStore": true
+}

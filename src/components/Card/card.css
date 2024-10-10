@@ -1,0 +1,98 @@
+
+.card {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 0 0.1rem #12121221;
+    background-color: #fff;
+}
+
+.card:hover {
+    outline: 1.5px solid #1a80a5; 
+}
+
+.card .ticket-id {
+    color: #6b6f76;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.card .title {
+    color: #282a2f;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.card .middle-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card .bottom-container {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.card .tag-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #edeff2;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.card .tag-icon {
+    background-color: #bec2c8;
+    border-radius: 9999px;
+    height: 0.65rem;
+    width: 0.65rem;
+}
+
+.card .tag-text {
+    color: #6b6f76;
+    font-weight: 600;
+    font-size: 0.65rem;
+}
+
+.card .top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .more-icon-container {
+    display: grid;
+    place-items: center;
+    border: 1px solid #edeff2;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.card .more-icon-container:hover {
+    background-color: #f1f1f1;
+   
+}
+
+.card .tag-container:hover {
+    background-color: #f1f1f1;
+}
+
+.card svg {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width:700px) {
+    .card {
+        min-width: fit-content;
+    }
+    .card:hover {
+        outline: none; 
+    }
+}
